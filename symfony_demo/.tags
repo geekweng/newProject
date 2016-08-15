@@ -1,0 +1,646 @@
+Controller	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^abstract class Controller implements ContainerAwareInterface$/;"	class	line:37
+generateUrl	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function generateUrl($route, $parameters = array(), $referenceType = UrlGeneratorInterface::ABSOLUTE_PATH)$/;"	function	line:52
+forward	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function forward($controller, array $path = array(), array $query = array())$/;"	function	line:66
+request	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^        $request = $this->container->get('request_stack')->getCurrentRequest();$/;"	variable	line:68
+subRequest	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^        $subRequest = $request->duplicate($query, null, $path);$/;"	variable	line:71
+redirect	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function redirect($url, $status = 302)$/;"	function	line:84
+redirectToRoute	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function redirectToRoute($route, array $parameters = array(), $status = 302)$/;"	function	line:98
+json	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function json($data, $status = 200, $headers = array(), $context = array())$/;"	function	line:113
+json	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $json = $this->container->get('serializer')->serialize($data, 'json', array_merge(array($/;"	variable	line:116
+addFlash	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function addFlash($type, $message)$/;"	function	line:134
+isGranted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function isGranted($attributes, $object = null)$/;"	function	line:153
+denyAccessUnlessGranted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function denyAccessUnlessGranted($attributes, $object = null, $message = 'Access Denied.')$/;"	function	line:172
+renderView	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function renderView($view, array $parameters = array())$/;"	function	line:187
+render	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function render($view, array $parameters = array(), Response $response = null)$/;"	function	line:209
+response	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $response = new Response();$/;"	variable	line:220
+stream	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function stream($view, array $parameters = array(), StreamedResponse $response = null)$/;"	function	line:237
+templating	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $templating = $this->container->get('templating');$/;"	variable	line:240
+callback	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $callback = function () use ($templating, $view, $parameters) {$/;"	variable	line:242
+twig	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $twig = $this->container->get('twig');$/;"	variable	line:246
+callback	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^            $callback = function () use ($twig, $view, $parameters) {$/;"	variable	line:248
+createNotFoundException	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function createNotFoundException($message = 'Not Found', \\Exception $previous = null)$/;"	function	line:276
+createAccessDeniedException	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function createAccessDeniedException($message = 'Access Denied.', \\Exception $previous = null)$/;"	function	line:293
+createForm	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function createForm($type, $data = null, array $options = array())$/;"	function	line:307
+createFormBuilder	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function createFormBuilder($data = null, array $options = array())$/;"	function	line:320
+getDoctrine	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function getDoctrine()$/;"	function	line:332
+getUser	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function getUser()$/;"	function	line:350
+has	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function has($id)$/;"	function	line:375
+get	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function get($id)$/;"	function	line:387
+getParameter	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function getParameter($name)$/;"	function	line:399
+isCsrfTokenValid	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php	/^    protected function isCsrfTokenValid($id, $token)$/;"	function	line:412
+ServiceKernel	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^class ServiceKernel$/;"	class	line:9
+_instance	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    private static $_instance;$/;"	variable	line:11
+_dispatcher	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    private static $_dispatcher;$/;"	variable	line:13
+_moduleDirectories	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $_moduleDirectories = array();$/;"	variable	line:15
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $_moduleConfig = array();$/;"	variable	line:17
+environment	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $environment;$/;"	variable	line:19
+debug	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $debug;$/;"	variable	line:20
+booted	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $booted;$/;"	variable	line:21
+parameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $parameterBag;$/;"	variable	line:23
+currentUser	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $currentUser;$/;"	variable	line:25
+pool	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $pool = array();$/;"	variable	line:27
+classMaps	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected $classMaps = array();$/;"	variable	line:29
+getRedis	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getRedis($group = 'default')$/;"	function	line:31
+redisFactory	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $redisFactory = RedisFactory::instance($this);$/;"	variable	line:33
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $redis        = $redisFactory->getRedis($group);$/;"	variable	line:34
+create	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public static function create($environment, $debug)$/;"	function	line:43
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $instance              = new self();$/;"	variable	line:49
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public static function instance()$/;"	function	line:59
+dispatcher	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public static function dispatcher()$/;"	function	line:69
+boot	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function boot()$/;"	function	line:80
+booted	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $this->booted = true;$/;"	variable	line:86
+moduleConfigCacheFile	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $moduleConfigCacheFile = $this->getParameter('kernel.root_dir').'\/cache\/'.$this->environment.'\/modules_config.php';$/;"	variable	line:88
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $this->_moduleConfig = include $moduleConfigCacheFile;$/;"	variable	line:91
+finder	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $finder = new Finder();$/;"	variable	line:93
+filepath	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^                $filepath = $dir->getRealPath().'\/module_config.php';$/;"	variable	line:103
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^                    $this->_moduleConfig = array_merge_recursive($this->_moduleConfig, include $filepath);$/;"	variable	line:106
+cache	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^                $cache = "<?php \\nreturn ".var_export($this->_moduleConfig, true).';';$/;"	variable	line:111
+subscribers	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $subscribers = empty($this->_moduleConfig['event_subscriber']) ? array() : $this->_moduleConfig['event_subscriber'];$/;"	variable	line:116
+setParameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function setParameterBag($parameterBag)$/;"	function	line:123
+parameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $this->parameterBag = $parameterBag;$/;"	variable	line:125
+getParameter	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getParameter($name)$/;"	function	line:128
+hasParameter	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function hasParameter($name)$/;"	function	line:137
+setCurrentUser	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function setCurrentUser($currentUser)$/;"	function	line:146
+currentUser	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $this->currentUser = $currentUser;$/;"	variable	line:148
+getCurrentUser	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getCurrentUser()$/;"	function	line:152
+setEnvVariable	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function setEnvVariable(array $env)$/;"	function	line:161
+env	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $this->env = $env;$/;"	variable	line:163
+getEnvVariable	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getEnvVariable($key = null)$/;"	function	line:167
+getConnection	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getConnection()$/;"	function	line:180
+setConnection	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function setConnection($connection)$/;"	function	line:189
+connection	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $this->connection = $connection;$/;"	variable	line:191
+createService	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function createService($name)$/;"	function	line:196
+class	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $class = $this->getClassName('service', $name);$/;"	variable	line:199
+createDao	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function createDao($name)$/;"	function	line:207
+class	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $class = $this->getClassName('dao', $name);$/;"	variable	line:210
+dao	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $dao   = ProxyManager::create($class);$/;"	variable	line:211
+getEnvironment	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getEnvironment()$/;"	function	line:220
+isDebug	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function isDebug()$/;"	function	line:225
+registerModuleDirectory	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function registerModuleDirectory($dir)$/;"	function	line:230
+getModuleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    public function getModuleConfig($key, $default = null)$/;"	function	line:235
+getClassName	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected function getClassName($type, $name)$/;"	function	line:244
+classMap	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $classMap = $this->getClassMap($type);$/;"	variable	line:246
+namespace	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^            $namespace = substr(__NAMESPACE__, 0, -strlen('Common') - 1);$/;"	variable	line:256
+type	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $type = strtolower($type);$/;"	variable	line:261
+getClassMap	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^    protected function getClassMap($type)$/;"	function	line:270
+key	/var/www/newProject/symfony_demo/src/AppBundle/Common/ServiceKernel.php	/^        $key = ($type == 'dao') ? 'topxia_daos' : 'topxia_services';$/;"	variable	line:276
+Annotation	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^class Annotation$/;"	class	line:5
+data	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^    protected $data;$/;"	variable	line:7
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^    public function __construct(array $data)$/;"	function	line:16
+data	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^        $this->data = $data;$/;"	variable	line:18
+__set	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^    public function __set($name, $value)$/;"	function	line:21
+__get	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^    public function __get($name)$/;"	function	line:29
+getAspect	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Annotation.php	/^    public function getAspect()$/;"	function	line:37
+IAnnotation	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/IAnnotation.php	/^interface IAnnotation$/;"	interface	line:5
+invoke	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/IAnnotation.php	/^    public function invoke($obj, $method, $arguments);$/;"	function	line:13
+RedisPool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^class RedisPool$/;"	class	line:7
+config	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    private $config;$/;"	variable	line:9
+pool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    private $pool;$/;"	variable	line:11
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    private static $instance;$/;"	variable	line:13
+init	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    public static function init($config)$/;"	function	line:15
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    public function instance()$/;"	function	line:25
+getRedis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    public function getRedis($group = 'default')$/;"	function	line:34
+poolKey	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $poolKey = "{$group}:master";$/;"	variable	line:36
+cnf	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $cnf = $this->config[$group];$/;"	variable	line:46
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^            $redis = new Redis();$/;"	variable	line:49
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^            $redis = new ConsistentHashingRedis($cnf);$/;"	variable	line:53
+getRedisSlave	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    public function getRedisSlave($group = 'default')$/;"	function	line:67
+index	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $index   = array_rand($this->config[$group]['slaves']);$/;"	variable	line:77
+poolKey	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $poolKey = "{$group}:slave:{$index}";$/;"	variable	line:78
+cnf	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $cnf = $this->config[$group]['slaves'][$index];$/;"	variable	line:84
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $redis = new Redis();$/;"	variable	line:86
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^    private function __construct($config)$/;"	function	line:95
+config	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisPool.php	/^        $this->config = $config;$/;"	variable	line:97
+ConsistentHashingRedis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^class ConsistentHashingRedis$/;"	class	line:8
+hash	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    private $hash;$/;"	variable	line:10
+reidsPool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    private $reidsPool;$/;"	variable	line:11
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function __construct($config)$/;"	function	line:13
+hash	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^        $this->hash = new Flexihash();$/;"	variable	line:15
+servers	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^        $servers      = $config['servers'];$/;"	variable	line:17
+redisServers	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^        $redisServers = array();$/;"	variable	line:18
+key	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^                $key   = $value['host'].':'.$value['port'];$/;"	variable	line:22
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^                $redis = new Redis();$/;"	variable	line:23
+close	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function close()$/;"	function	line:35
+get	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function get($key)$/;"	function	line:39
+setex	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function setex($key, $ttl, $data)$/;"	function	line:44
+delete	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function delete($key)$/;"	function	line:49
+incrBy	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function incrBy($key, $value)$/;"	function	line:54
+incr	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function incr($key)$/;"	function	line:59
+lookup	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/ConsistentHashingRedis.php	/^    public function lookup($key)$/;"	function	line:64
+FileCacheReader	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^class FileCacheReader implements Reader$/;"	class	line:24
+reader	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private $reader;$/;"	variable	line:29
+dir	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private $dir;$/;"	variable	line:34
+debug	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private $debug;$/;"	variable	line:39
+loadedAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private $loadedAnnotations = array();$/;"	variable	line:44
+classNameHashes	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private $classNameHashes = array();$/;"	variable	line:49
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function __construct(Reader $reader, $cacheDir, $debug = false)$/;"	function	line:60
+reader	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $this->reader = $reader;$/;"	variable	line:62
+dir	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $this->dir   = rtrim($cacheDir, '\\\\\/');$/;"	variable	line:67
+debug	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $this->debug = $debug;$/;"	variable	line:68
+getClassAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getClassAnnotations(\\ReflectionClass $class)$/;"	function	line:74
+key	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $key = $this->classNameHashes[$class->name];$/;"	variable	line:79
+path	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $path = $this->dir.'\/'.strtr($key, '\\\\', '-').'.cache.php';$/;"	variable	line:85
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getClassAnnotations($class);$/;"	variable	line:87
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getClassAnnotations($class);$/;"	variable	line:97
+getPropertyAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getPropertyAnnotations(\\ReflectionProperty $property)$/;"	function	line:108
+class	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $class = $property->getDeclaringClass();$/;"	variable	line:110
+key	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $key = $this->classNameHashes[$class->name].'$'.$property->getName();$/;"	variable	line:114
+path	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $path = $this->dir.'\/'.strtr($key, '\\\\', '-').'.cache.php';$/;"	variable	line:120
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getPropertyAnnotations($property);$/;"	variable	line:122
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getPropertyAnnotations($property);$/;"	variable	line:132
+getMethodAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getMethodAnnotations(\\ReflectionMethod $method)$/;"	function	line:143
+class	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $class = $method->getDeclaringClass();$/;"	variable	line:145
+key	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $key = $this->classNameHashes[$class->name].'#'.$method->getName();$/;"	variable	line:149
+path	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $path = $this->dir.'\/'.strtr($key, '\\\\', '-').'.cache.php';$/;"	variable	line:155
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getMethodAnnotations($method);$/;"	variable	line:157
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^            $annot = $this->reader->getMethodAnnotations($method);$/;"	variable	line:167
+saveCacheFile	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    private function saveCacheFile($path, $data)$/;"	function	line:183
+tempfile	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $tempfile = tempnam($this->dir, uniqid('', true));$/;"	variable	line:193
+written	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $written = file_put_contents($tempfile, '<?php return unserialize('.var_export(serialize($data), true).');');$/;"	variable	line:199
+getClassAnnotation	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getClassAnnotation(\\ReflectionClass $class, $annotationName)$/;"	function	line:216
+annotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $annotations = $this->getClassAnnotations($class);$/;"	variable	line:218
+getMethodAnnotation	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getMethodAnnotation(\\ReflectionMethod $method, $annotationName)$/;"	function	line:232
+annotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $annotations = $this->getMethodAnnotations($method);$/;"	variable	line:234
+getPropertyAnnotation	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function getPropertyAnnotation(\\ReflectionProperty $property, $annotationName)$/;"	function	line:248
+annotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $annotations = $this->getPropertyAnnotations($property);$/;"	variable	line:250
+clearLoadedAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^    public function clearLoadedAnnotations()$/;"	function	line:266
+loadedAnnotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Reader/FileCacheReader.php	/^        $this->loadedAnnotations = array();$/;"	variable	line:268
+ProxyFramework	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^class ProxyFramework$/;"	class	line:10
+object	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    private $object = null;$/;"	variable	line:12
+annotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    private $annotations = array();$/;"	variable	line:14
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    public function __construct($object)$/;"	function	line:20
+object	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^        $this->object = $object;$/;"	variable	line:22
+annotations	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^        $this->annotations = AnnotationsLoader::load(get_class($object));$/;"	variable	line:23
+__get	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    public function __get($name)$/;"	function	line:30
+__set	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    public function __set($name, $value)$/;"	function	line:40
+__call	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^    public function __call($name, $arguments)$/;"	function	line:54
+annot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^            $annot = $this->annotations[$name];$/;"	variable	line:57
+aspect	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^            $aspect = $annot->getAspect();$/;"	variable	line:59
+result	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyFramework.php	/^                    $result = call_user_func_array(array($this->object, $name), $arguments);$/;"	variable	line:70
+ProxyManager	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyManager.php	/^class ProxyManager$/;"	class	line:8
+create	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Proxy/ProxyManager.php	/^    public static function create($className)$/;"	function	line:15
+RedisFactory	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^class RedisFactory$/;"	class	line:6
+container	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    private $container;$/;"	variable	line:8
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    private static $instance;$/;"	variable	line:9
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    private $redis;$/;"	variable	line:10
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    private function __construct($container)$/;"	function	line:12
+container	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^        $this->container = $container;$/;"	variable	line:14
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    public static function instance($container)$/;"	function	line:17
+getRedis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    public function getRedis($group = 'default')$/;"	function	line:26
+redisPool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^            $redisPool = $this->getRedisPool();$/;"	variable	line:29
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^                $this->redis = $redisPool->getRedis($group);$/;"	variable	line:32
+getRedisPool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    private function getRedisPool()$/;"	function	line:42
+redisConfigFile	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^        $redisConfigFile = $this->container->getParameter('kernel.root_dir').'\/data\/redis.php';$/;"	variable	line:44
+redisConfig	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^            $redisConfig     = include $redisConfigFile;$/;"	variable	line:47
+redisPool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^            $this->redisPool = RedisPool::init($redisConfig);$/;"	variable	line:48
+getSettingService	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Redis/RedisFactory.php	/^    protected function getSettingService()$/;"	function	line:55
+AnnotationsLoader	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^class AnnotationsLoader$/;"	class	line:10
+reader	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^    protected static $reader;$/;"	variable	line:12
+load	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^    public static function load($class)$/;"	function	line:14
+class	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^        $class = new \\ReflectionClass($class);$/;"	variable	line:20
+env	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^            $env = ServiceKernel::instance()->getEnvironment();$/;"	variable	line:27
+cacheDir	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^            $cacheDir = ServiceKernel::instance()->getParameter('kernel.root_dir').'\/cache\/'.$env.'\/annotations\/app';$/;"	variable	line:28
+debug	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^            $debug = $env !== 'prod';$/;"	variable	line:29
+collection	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Annotations/Loader/AnnotationsLoader.php	/^        $collection = array();$/;"	variable	line:34
+ServiceKernel	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^class ServiceKernel$/;"	class	line:9
+_instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    private static $_instance;$/;"	variable	line:11
+_dispatcher	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    private static $_dispatcher;$/;"	variable	line:13
+_moduleDirectories	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $_moduleDirectories = array();$/;"	variable	line:15
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $_moduleConfig = array();$/;"	variable	line:17
+environment	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $environment;$/;"	variable	line:19
+debug	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $debug;$/;"	variable	line:20
+booted	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $booted;$/;"	variable	line:21
+parameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $parameterBag;$/;"	variable	line:23
+currentUser	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $currentUser;$/;"	variable	line:25
+pool	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $pool = array();$/;"	variable	line:27
+classMaps	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected $classMaps = array();$/;"	variable	line:29
+getRedis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getRedis($group = 'default')$/;"	function	line:31
+redisFactory	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $redisFactory = RedisFactory::instance($this);$/;"	variable	line:33
+redis	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $redis        = $redisFactory->getRedis($group);$/;"	variable	line:34
+create	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public static function create($environment, $debug)$/;"	function	line:43
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $instance              = new self();$/;"	variable	line:49
+instance	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public static function instance()$/;"	function	line:59
+dispatcher	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public static function dispatcher()$/;"	function	line:69
+boot	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function boot()$/;"	function	line:80
+booted	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $this->booted = true;$/;"	variable	line:86
+moduleConfigCacheFile	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $moduleConfigCacheFile = $this->getParameter('kernel.root_dir').'\/cache\/'.$this->environment.'\/modules_config.php';$/;"	variable	line:88
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $this->_moduleConfig = include $moduleConfigCacheFile;$/;"	variable	line:91
+finder	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $finder = new Finder();$/;"	variable	line:93
+filepath	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^                $filepath = $dir->getRealPath().'\/module_config.php';$/;"	variable	line:103
+_moduleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^                    $this->_moduleConfig = array_merge_recursive($this->_moduleConfig, include $filepath);$/;"	variable	line:106
+cache	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^                $cache = "<?php \\nreturn ".var_export($this->_moduleConfig, true).';';$/;"	variable	line:111
+subscribers	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $subscribers = empty($this->_moduleConfig['event_subscriber']) ? array() : $this->_moduleConfig['event_subscriber'];$/;"	variable	line:116
+setParameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function setParameterBag($parameterBag)$/;"	function	line:123
+parameterBag	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $this->parameterBag = $parameterBag;$/;"	variable	line:125
+getParameter	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getParameter($name)$/;"	function	line:128
+hasParameter	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function hasParameter($name)$/;"	function	line:137
+setCurrentUser	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function setCurrentUser($currentUser)$/;"	function	line:146
+currentUser	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $this->currentUser = $currentUser;$/;"	variable	line:148
+getCurrentUser	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getCurrentUser()$/;"	function	line:152
+setEnvVariable	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function setEnvVariable(array $env)$/;"	function	line:161
+env	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $this->env = $env;$/;"	variable	line:163
+getEnvVariable	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getEnvVariable($key = null)$/;"	function	line:167
+getConnection	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getConnection()$/;"	function	line:180
+setConnection	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function setConnection($connection)$/;"	function	line:189
+connection	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $this->connection = $connection;$/;"	variable	line:191
+createService	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function createService($name)$/;"	function	line:196
+class	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $class = $this->getClassName('service', $name);$/;"	variable	line:199
+createDao	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function createDao($name)$/;"	function	line:207
+class	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $class = $this->getClassName('dao', $name);$/;"	variable	line:210
+dao	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $dao   = ProxyManager::create($class);$/;"	variable	line:211
+getEnvironment	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getEnvironment()$/;"	function	line:220
+isDebug	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function isDebug()$/;"	function	line:225
+registerModuleDirectory	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function registerModuleDirectory($dir)$/;"	function	line:230
+getModuleConfig	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    public function getModuleConfig($key, $default = null)$/;"	function	line:235
+getClassName	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected function getClassName($type, $name)$/;"	function	line:244
+classMap	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $classMap = $this->getClassMap($type);$/;"	variable	line:246
+namespace	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^            $namespace = substr(__NAMESPACE__, 0, -strlen('Common') - 1);$/;"	variable	line:256
+type	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $type = strtolower($type);$/;"	variable	line:261
+getClassMap	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^    protected function getClassMap($type)$/;"	function	line:270
+key	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/ServiceKernel.php	/^        $key = ($type == 'dao') ? 'app_daos' : 'app_services';$/;"	variable	line:276
+Connection	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Connection.php	/^class Connection extends DoctrineConnection$/;"	class	line:6
+update	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Connection.php	/^    public function update($tableExpression, array $data, array $identifier, array $types = array())$/;"	function	line:8
+insert	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Connection.php	/^    public function insert($tableExpression, array $data, array $types = array())$/;"	function	line:14
+checkFieldNames	/var/www/newProject/symfony_demo/src/AppBundle/Service/Common/Connection.php	/^    public function checkFieldNames($names)$/;"	function	line:20
+Configuration	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/Configuration.php	/^class Configuration implements ConfigurationInterface$/;"	class	line:13
+getConfigTreeBuilder	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/Configuration.php	/^    public function getConfigTreeBuilder()$/;"	function	line:18
+treeBuilder	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/Configuration.php	/^        $treeBuilder = new TreeBuilder();$/;"	variable	line:20
+AppExtension	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/AppExtension.php	/^class AppExtension extends Extension$/;"	class	line:15
+load	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/AppExtension.php	/^    public function load(array $configs, ContainerBuilder $container)$/;"	function	line:20
+configuration	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/AppExtension.php	/^        $configuration = new Configuration();$/;"	variable	line:22
+loader	/var/www/newProject/symfony_demo/src/AppBundle/DependencyInjection/AppExtension.php	/^        $loader = new Loader\\YamlFileLoader($container, new FileLocator(__DIR__.'\/..\/Resources\/config'));$/;"	variable	line:24
+homepage	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^homepage:$/;"	function	line:1
+path	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^    path:     \/$/;"	function	line:2
+defaults	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^    defaults: { _controller: AppBundle:Default:index }$/;"	function	line:3
+login	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^login:$/;"	function	line:5
+path	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^    path:     \/login$/;"	function	line:6
+defaults	/var/www/newProject/symfony_demo/src/AppBundle/Resource/config/routing.yml	/^    defaults: { _controller: AppBundle:Login:index }$/;"	function	line:7
+BaseController	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^abstract class BaseController extends Controller$/;"	class	line:9
+createMessageResponse	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function createMessageResponse($type, $message, $title = '', $duration = 0, $goto = null)$/;"	function	line:22
+getTargetPath	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function getTargetPath($request)$/;"	function	line:37
+targetPath	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^            $targetPath = $request->query->get('goto');$/;"	variable	line:40
+targetPath	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^            $targetPath = $request->getSession()->get('_target_path');$/;"	variable	line:42
+targetPath	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^            $targetPath = $request->headers->get('Referer');$/;"	variable	line:44
+targetPath	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^            $targetPath = $this->generateUrl('homepage', array(), true);$/;"	variable	line:52
+getCurrentUser	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function getCurrentUser()$/;"	function	line:58
+createMessageModalResponse	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function createMessageModalResponse($type, $message, $title = '', $duration = 0, $goto = null)$/;"	function	line:63
+checkLogin	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function checkLogin()$/;"	function	line:74
+isLogin	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function isLogin()$/;"	function	line:81
+setFlashMessage	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function setFlashMessage($level, $message)$/;"	function	line:86
+setting	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function setting($name, $default = null)$/;"	function	line:91
+isPluginInstalled	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function isPluginInstalled($name)$/;"	function	line:96
+createNamedFormBuilder	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function createNamedFormBuilder($name, $data = null, array $options = array())$/;"	function	line:101
+sendEmail	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function sendEmail($to, $title, $body, $format = 'text')$/;"	function	line:106
+format	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $format = $format == 'html' ? 'text\/html' : 'text\/plain';$/;"	variable	line:108
+config	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $config = $this->setting('mailer', array());$/;"	variable	line:110
+transport	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $transport = \\Swift_SmtpTransport::newInstance($config['host'], $config['port'])$/;"	variable	line:116
+mailer	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $mailer = \\Swift_Mailer::newInstance($transport);$/;"	variable	line:120
+email	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $email = \\Swift_Message::newInstance();$/;"	variable	line:122
+createJsonResponse	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function createJsonResponse($data)$/;"	function	line:138
+createJsonmResponse	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function createJsonmResponse($data)$/;"	function	line:147
+response	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^        $response = new JsonResponse($data);$/;"	variable	line:149
+getServiceKernel	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function getServiceKernel()$/;"	function	line:155
+getUserService	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function getUserService()$/;"	function	line:160
+getLogService	/var/www/newProject/symfony_demo/src/AppBundle/Controller/BaseController.php	/^    protected function getLogService()$/;"	function	line:165
+indexAction	/var/www/newProject/symfony_demo/src/AppBundle/Controller/LoginController.php	/^  public function indexAction(Request $request)$/;"	function	line:10
+AjaxExceptionListener	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^class AjaxExceptionListener$/;"	class	line:12
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^    public function __construct($container)$/;"	function	line:14
+container	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^        $this->container = $container;$/;"	variable	line:16
+onKernelException	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^    public function onKernelException(GetResponseForExceptionEvent $event)$/;"	function	line:19
+problem	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^        $problem   = $this->container->get('Topxia.RepairProblem', ContainerInterface::NULL_ON_INVALID_REFERENCE);$/;"	variable	line:21
+exception	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^        $exception = $event->getException();$/;"	variable	line:22
+request	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^        $request   = $event->getRequest();$/;"	variable	line:23
+result	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^            $result = ob_get_contents();$/;"	variable	line:32
+statusCode	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^            $statusCode = 403;$/;"	variable	line:39
+statusCode	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^            $statusCode = $exception->getCode();$/;"	variable	line:41
+statusCode	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^                $statusCode = 500;$/;"	variable	line:44
+error	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^            $error = array('name' => 'Error', 'message' => $exception->getMessage());$/;"	variable	line:47
+user	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^            $user = $this->getUser($event);$/;"	variable	line:55
+error	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^                $error = array('name' => 'AccessDenied', 'message' => '访问被拒绝！');$/;"	variable	line:58
+error	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^                $error = array('name' => 'Unlogin', 'message' => '当前操作，需要登录！');$/;"	variable	line:60
+response	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^        $response = new JsonResponse(array('error' => $error), $statusCode);$/;"	variable	line:64
+getUser	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^    public function getUser()$/;"	function	line:68
+getServiceKernel	/var/www/newProject/symfony_demo/src/AppBundle/Listener/AjaxExceptionListener.php	/^    protected function getServiceKernel()$/;"	function	line:85
+KernelRequestListener	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^class KernelRequestListener$/;"	class	line:7
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^    public function __construct($container)$/;"	function	line:9
+container	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^        $this->container = $container;$/;"	variable	line:11
+onKernelRequest	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^    public function onKernelRequest(GetResponseEvent $event)$/;"	function	line:14
+request	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^        $request = $event->getRequest();$/;"	variable	line:16
+whiteList	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^            $whiteList = array('\/editor\/upload', '\/cas\/user_profile\/push', '\/callback\/logout');$/;"	variable	line:19
+token	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^                $token = $request->headers->get('X-CSRF-Token');$/;"	variable	line:26
+token	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^                $token = $request->request->get('_csrf_token', '');$/;"	variable	line:28
+expectedToken	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^            $expectedToken = $this->container->get('security.csrf.token_manager')->getToken('site');$/;"	variable	line:32
+response	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^                $response = $this->container->get('templating')->renderResponse('TopxiaWebBundle:Default:message.html.twig', array($/;"	variable	line:35
+deleteCsrfToken	/var/www/newProject/symfony_demo/src/AppBundle/Listener/KernelRequestListener.php	/^    private function deleteCsrfToken($request)$/;"	function	line:47
+loader	/var/www/newProject/symfony_demo/web/app_dev.php	/^$loader = require __DIR__.'\/..\/app\/autoload.php';$/;"	variable	line:31
+kernel	/var/www/newProject/symfony_demo/web/app_dev.php	/^$kernel = new AppKernel('dev', true);$/;"	variable	line:34
+request	/var/www/newProject/symfony_demo/web/app_dev.php	/^$request = Request::createFromGlobals();$/;"	variable	line:36
+response	/var/www/newProject/symfony_demo/web/app_dev.php	/^$response = $kernel->handle($request);$/;"	variable	line:37
+Kernel	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^abstract class Kernel implements KernelInterface, TerminableInterface$/;"	class	line:45
+bundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $bundles = array();$/;"	variable	line:50
+bundleMap	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $bundleMap;$/;"	variable	line:52
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $container;$/;"	variable	line:53
+rootDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $rootDir;$/;"	variable	line:54
+environment	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $environment;$/;"	variable	line:55
+debug	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $debug;$/;"	variable	line:56
+booted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $booted = false;$/;"	variable	line:57
+name	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $name;$/;"	variable	line:58
+startTime	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $startTime;$/;"	variable	line:59
+loadClassCache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected $loadClassCache;$/;"	variable	line:60
+__construct	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function __construct($environment, $debug)$/;"	function	line:78
+environment	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->environment = $environment;$/;"	variable	line:80
+debug	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->debug = (bool) $debug;$/;"	variable	line:81
+rootDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->rootDir = $this->getRootDir();$/;"	variable	line:82
+name	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->name = $this->getName();$/;"	variable	line:83
+startTime	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $this->startTime = microtime(true);$/;"	variable	line:86
+__clone	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function __clone()$/;"	function	line:90
+startTime	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $this->startTime = microtime(true);$/;"	variable	line:93
+booted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->booted = false;$/;"	variable	line:96
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->container = null;$/;"	variable	line:97
+boot	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function boot()$/;"	function	line:103
+booted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->booted = true;$/;"	variable	line:124
+terminate	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function terminate(Request $request, Response $response)$/;"	function	line:130
+shutdown	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function shutdown()$/;"	function	line:144
+booted	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->booted = false;$/;"	variable	line:150
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->container = null;$/;"	variable	line:157
+handle	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)$/;"	function	line:163
+getHttpKernel	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getHttpKernel()$/;"	function	line:177
+getBundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getBundles()$/;"	function	line:185
+getBundle	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getBundle($name, $first = true)$/;"	function	line:193
+locateResource	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function locateResource($name, $dir = null, $first = true)$/;"	function	line:211
+bundleName	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $bundleName = substr($name, 1);$/;"	variable	line:221
+path	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $path = '';$/;"	variable	line:222
+isResource	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $isResource = 0 === strpos($path, 'Resources') && null !== $dir;$/;"	variable	line:227
+overridePath	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $overridePath = substr($path, 9);$/;"	variable	line:228
+resourceBundle	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $resourceBundle = null;$/;"	variable	line:229
+bundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $bundles = $this->getBundle($bundleName, false);$/;"	variable	line:230
+files	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $files = array();$/;"	variable	line:231
+resourceBundle	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                $resourceBundle = $bundle->getName();$/;"	variable	line:254
+getName	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getName()$/;"	function	line:268
+name	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $this->name = preg_replace('\/[^a-zA-Z0-9_]+\/', '', basename($this->rootDir));$/;"	variable	line:271
+getEnvironment	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getEnvironment()$/;"	function	line:280
+isDebug	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function isDebug()$/;"	function	line:288
+getRootDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getRootDir()$/;"	function	line:296
+r	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $r = new \\ReflectionObject($this);$/;"	variable	line:299
+rootDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $this->rootDir = dirname($r->getFileName());$/;"	variable	line:300
+getContainer	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getContainer()$/;"	function	line:309
+loadClassCache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function loadClassCache($name = 'classes', $extension = '.php')$/;"	function	line:326
+loadClassCache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->loadClassCache = array($name, $extension);$/;"	variable	line:328
+setClassCache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function setClassCache(array $classes)$/;"	function	line:334
+getStartTime	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getStartTime()$/;"	function	line:342
+getCacheDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getCacheDir()$/;"	function	line:350
+getLogDir	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getLogDir()$/;"	function	line:358
+getCharset	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function getCharset()$/;"	function	line:366
+doLoadClassCache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function doLoadClassCache($name, $extension)$/;"	function	line:371
+initializeBundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function initializeBundles()$/;"	function	line:389
+bundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->bundles = array();$/;"	variable	line:392
+topMostBundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $topMostBundles = array();$/;"	variable	line:393
+directChildren	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $directChildren = array();$/;"	variable	line:394
+name	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $name = $bundle->getName();$/;"	variable	line:397
+diff	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $diff = array_keys($diff);$/;"	variable	line:418
+bundleMap	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->bundleMap = array();$/;"	variable	line:424
+bundleMap	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $bundleMap = array($bundle);$/;"	variable	line:426
+hierarchy	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $hierarchy = array($name);$/;"	variable	line:427
+name	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                $name = $directChildren[$name];$/;"	variable	line:430
+getContainerClass	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getContainerClass()$/;"	function	line:447
+getContainerBaseClass	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getContainerBaseClass()$/;"	function	line:459
+initializeContainer	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function initializeContainer()$/;"	function	line:470
+class	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $class = $this->getContainerClass();$/;"	variable	line:472
+cache	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $cache = new ConfigCache($this->getCacheDir().'\/'.$class.'.php', $this->debug);$/;"	variable	line:473
+fresh	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $fresh = true;$/;"	variable	line:474
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $container = $this->buildContainer();$/;"	variable	line:476
+fresh	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $fresh = false;$/;"	variable	line:480
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $this->container = new $class();$/;"	variable	line:485
+getKernelParameters	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getKernelParameters()$/;"	function	line:498
+bundles	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $bundles = array();$/;"	variable	line:500
+getEnvParameters	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getEnvParameters()$/;"	function	line:528
+parameters	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $parameters = array();$/;"	variable	line:530
+buildContainer	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function buildContainer()$/;"	function	line:547
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $container = $this->getContainerBuilder();$/;"	variable	line:559
+prepareContainer	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function prepareContainer(ContainerBuilder $container)$/;"	function	line:578
+extensions	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $extensions = array();$/;"	variable	line:580
+getContainerBuilder	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getContainerBuilder()$/;"	function	line:604
+container	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $container = new ContainerBuilder(new ParameterBag($this->getKernelParameters()));$/;"	variable	line:606
+dumpContainer	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function dumpContainer(ConfigCache $cache, ContainerBuilder $container, $class, $baseClass)$/;"	function	line:623
+dumper	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $dumper = new PhpDumper($container);$/;"	variable	line:626
+content	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $content = $dumper->dump(array('class' => $class, 'base_class' => $baseClass, 'file' => $cache->getPath(), 'debug' => $this->debug));$/;"	variable	line:632
+getContainerLoader	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    protected function getContainerLoader(ContainerInterface $container)$/;"	function	line:644
+locator	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $locator = new FileLocator($this);$/;"	variable	line:646
+resolver	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $resolver = new LoaderResolver(array($/;"	variable	line:647
+stripComments	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public static function stripComments($source)$/;"	function	line:669
+rawChunk	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $rawChunk = '';$/;"	variable	line:675
+output	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $output = '';$/;"	variable	line:676
+tokens	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $tokens = token_get_all($source);$/;"	variable	line:677
+ignoreSpace	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^        $ignoreSpace = false;$/;"	variable	line:678
+token	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^            $token = $tokens[$i];$/;"	variable	line:680
+token	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                    $token = $tokens[++$i];$/;"	variable	line:686
+rawChunk	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                $rawChunk = '';$/;"	variable	line:689
+ignoreSpace	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                    $ignoreSpace = false;$/;"	variable	line:692
+ignoreSpace	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                $ignoreSpace = true;$/;"	variable	line:700
+ignoreSpace	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^                    $ignoreSpace = true;$/;"	variable	line:706
+serialize	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function serialize()$/;"	function	line:722
+unserialize	/var/www/newProject/symfony_demo/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php	/^    public function unserialize($data)$/;"	function	line:727
+security	/var/www/newProject/symfony_demo/app/config/security.yml	/^security:$/;"	function	line:1
+encoders	/var/www/newProject/symfony_demo/app/config/security.yml	/^    encoders:$/;"	function	line:2
+providers	/var/www/newProject/symfony_demo/app/config/security.yml	/^    providers:$/;"	function	line:7
+database_users	/var/www/newProject/symfony_demo/app/config/security.yml	/^        database_users:$/;"	function	line:11
+entity	/var/www/newProject/symfony_demo/app/config/security.yml	/^            entity: { class: AppBundle:User, property: username }$/;"	function	line:12
+firewalls	/var/www/newProject/symfony_demo/app/config/security.yml	/^    firewalls:$/;"	function	line:15
+secured_area	/var/www/newProject/symfony_demo/app/config/security.yml	/^        secured_area:$/;"	function	line:16
+pattern	/var/www/newProject/symfony_demo/app/config/security.yml	/^            pattern: ^\/$/;"	function	line:18
+anonymous	/var/www/newProject/symfony_demo/app/config/security.yml	/^            anonymous: true$/;"	function	line:22
+form_login	/var/www/newProject/symfony_demo/app/config/security.yml	/^            form_login:$/;"	function	line:26
+check_path	/var/www/newProject/symfony_demo/app/config/security.yml	/^                check_path: security_login$/;"	function	line:28
+login_path	/var/www/newProject/symfony_demo/app/config/security.yml	/^                login_path: security_login$/;"	function	line:31
+csrf_token_generator	/var/www/newProject/symfony_demo/app/config/security.yml	/^                csrf_token_generator: security.csrf.token_manager$/;"	function	line:34
+logout	/var/www/newProject/symfony_demo/app/config/security.yml	/^            logout:$/;"	function	line:36
+path	/var/www/newProject/symfony_demo/app/config/security.yml	/^                path: security_logout$/;"	function	line:38
+target	/var/www/newProject/symfony_demo/app/config/security.yml	/^                target: homepage$/;"	function	line:40
+access_control	/var/www/newProject/symfony_demo/app/config/security.yml	/^    access_control:$/;"	function	line:42
+services	/var/www/newProject/symfony_demo/src/AppBundle/Resources/config/services.yml	/^services:$/;"	function	line:1
+UserPdoSessionHandler	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^class UserPdoSessionHandler implements \\SessionHandlerInterface$/;"	class	line:46
+pdo	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $pdo;$/;"	variable	line:78
+dsn	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $dsn = false;$/;"	variable	line:83
+driver	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $driver;$/;"	variable	line:88
+table	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $table = 'sessions';$/;"	variable	line:93
+idCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $idCol = 'sess_id';$/;"	variable	line:98
+userIdCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $userIdCol = 'sess_user_id';$/;"	variable	line:103
+dataCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $dataCol = 'sess_data';$/;"	variable	line:108
+lifetimeCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $lifetimeCol = 'sess_lifetime';$/;"	variable	line:113
+timeCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $timeCol = 'sess_time';$/;"	variable	line:118
+username	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $username = '';$/;"	variable	line:123
+password	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $password = '';$/;"	variable	line:128
+connectionOptions	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $connectionOptions = array();$/;"	variable	line:133
+lockMode	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $lockMode = self::LOCK_ADVISORY;$/;"	variable	line:138
+unlockStatements	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $unlockStatements = array();$/;"	variable	line:145
+sessionExpired	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $sessionExpired = false;$/;"	variable	line:150
+inTransaction	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $inTransaction = false;$/;"	variable	line:155
+gcCalled	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $gcCalled = false;$/;"	variable	line:160
+createable	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private $createable = true;$/;"	variable	line:165
+__construct	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function __construct($pdoOrDsn = null, array $options = array(), SecurityContext $context, $container)$/;"	function	line:191
+request	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $request   = $container->get('request');$/;"	variable	line:193
+userAgent	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $userAgent = $request->headers->get("user-agent");$/;"	variable	line:194
+createable	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->createable = false;$/;"	variable	line:197
+pdo	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->pdo    = $pdoOrDsn;$/;"	variable	line:205
+driver	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->driver = $this->pdo->getAttribute(\\PDO::ATTR_DRIVER_NAME);$/;"	variable	line:206
+dsn	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->dsn = $pdoOrDsn;$/;"	variable	line:208
+table	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->table             = isset($options['db_table']) ? $options['db_table'] : $this->table;$/;"	variable	line:211
+idCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->idCol             = isset($options['db_id_col']) ? $options['db_id_col'] : $this->idCol;$/;"	variable	line:212
+userIdCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->userIdCol         = isset($options['db_user_id_col']) ? $options['db_user_id_col'] : $this->userIdCol;$/;"	variable	line:213
+dataCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->dataCol           = isset($options['db_data_col']) ? $options['db_data_col'] : $this->dataCol;$/;"	variable	line:214
+lifetimeCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->lifetimeCol       = isset($options['db_lifetime_col']) ? $options['db_lifetime_col'] : $this->lifetimeCol;$/;"	variable	line:215
+timeCol	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->timeCol           = isset($options['db_time_col']) ? $options['db_time_col'] : $this->timeCol;$/;"	variable	line:216
+username	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->username          = isset($options['db_username']) ? $options['db_username'] : $this->username;$/;"	variable	line:217
+password	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->password          = isset($options['db_password']) ? $options['db_password'] : $this->password;$/;"	variable	line:218
+connectionOptions	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->connectionOptions = isset($options['db_connection_options']) ? $options['db_connection_options'] : $this->connectionOptions;$/;"	variable	line:219
+lockMode	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->lockMode          = isset($options['lock_mode']) ? $options['lock_mode'] : $this->lockMode;$/;"	variable	line:220
+context	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->context = $context;$/;"	variable	line:222
+createTable	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function createTable()$/;"	function	line:236
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $sql = "CREATE TABLE $this->table ($this->idCol VARBINARY(128) NOT NULL PRIMARY KEY, $this->dataCol BLOB NOT NULL, $this->lifetimeCol MEDIUMINT NOT NULL, $this->timeCol INTEGER UNSIGNED NOT NULL) COLLATE utf8_bin, ENGINE = InnoDB";$/;"	variable	line:248
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $sql = "CREATE TABLE $this->table ($this->idCol TEXT NOT NULL PRIMARY KEY, $this->dataCol BLOB NOT NULL, $this->lifetimeCol INTEGER NOT NULL, $this->timeCol INTEGER NOT NULL)";$/;"	variable	line:251
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $sql = "CREATE TABLE $this->table ($this->idCol VARCHAR(128) NOT NULL PRIMARY KEY, $this->dataCol BYTEA NOT NULL, $this->lifetimeCol INTEGER NOT NULL, $this->timeCol INTEGER NOT NULL)";$/;"	variable	line:254
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $sql = "CREATE TABLE $this->table ($this->idCol VARCHAR2(128) NOT NULL PRIMARY KEY, $this->dataCol BLOB NOT NULL, $this->lifetimeCol INTEGER NOT NULL, $this->timeCol INTEGER NOT NULL)";$/;"	variable	line:257
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $sql = "CREATE TABLE $this->table ($this->idCol VARCHAR(128) NOT NULL PRIMARY KEY, $this->dataCol VARBINARY(MAX) NOT NULL, $this->lifetimeCol INTEGER NOT NULL, $this->timeCol INTEGER NOT NULL)";$/;"	variable	line:260
+isSessionExpired	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function isSessionExpired()$/;"	function	line:282
+open	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function open($savePath, $sessionName)$/;"	function	line:290
+maxlifetime	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $maxlifetime = self::MAX_LIFE_TIME;$/;"	variable	line:296
+read	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function read($sessionId)$/;"	function	line:304
+gc	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function gc($maxlifetime)$/;"	function	line:318
+rootDirectory	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $rootDirectory = $this->getSystemRootDirectory();$/;"	variable	line:322
+path	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $path          = "$rootDirectory\/app\/data\/session_gc_time.data";$/;"	variable	line:323
+lastGcTime	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $lastGcTime = 0;$/;"	variable	line:326
+lastGcTime	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $lastGcTime = intval(file_get_contents($path));$/;"	variable	line:328
+gcCalled	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->gcCalled = true;$/;"	variable	line:332
+getSystemRootDirectory	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    protected function getSystemRootDirectory()$/;"	function	line:339
+destroy	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function destroy($sessionId)$/;"	function	line:347
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $sql = "DELETE FROM $this->table WHERE $this->idCol = :id";$/;"	variable	line:350
+stmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $stmt = $this->pdo->prepare($sql);$/;"	variable	line:353
+write	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function write($sessionId, $data)$/;"	function	line:368
+maxlifetime	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $maxlifetime = self::MAX_LIFE_TIME;$/;"	variable	line:374
+token	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $token = $this->context->getToken();$/;"	variable	line:376
+userId	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $userId = 0;$/;"	variable	line:379
+userId	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $userId = $token->getUser()->getId();$/;"	variable	line:381
+mergeSql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $mergeSql = $this->getMergeSql();$/;"	variable	line:386
+mergeStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $mergeStmt = $this->pdo->prepare($mergeSql);$/;"	variable	line:389
+updateStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $updateStmt = $this->pdo->prepare($/;"	variable	line:400
+insertStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $insertStmt = $this->pdo->prepare($/;"	variable	line:418
+close	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    public function close()$/;"	function	line:449
+gcCalled	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->gcCalled = false;$/;"	variable	line:458
+sql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $sql = "DELETE FROM $this->table WHERE $this->lifetimeCol + $this->timeCol < :time";$/;"	variable	line:461
+stmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $stmt = $this->pdo->prepare($sql);$/;"	variable	line:463
+pdo	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->pdo = null; \/\/ only close lazy-connection$/;"	variable	line:469
+connect	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function connect($dsn)$/;"	function	line:480
+pdo	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->pdo = new \\PDO($dsn, $this->username, $this->password, $this->connectionOptions);$/;"	variable	line:482
+driver	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->driver = $this->pdo->getAttribute(\\PDO::ATTR_DRIVER_NAME);$/;"	variable	line:484
+beginTransaction	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function beginTransaction()$/;"	function	line:499
+inTransaction	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->inTransaction = true;$/;"	variable	line:512
+commit	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function commit()$/;"	function	line:519
+inTransaction	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $this->inTransaction = false;$/;"	variable	line:531
+rollback	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function rollback()$/;"	function	line:543
+inTransaction	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^            $this->inTransaction = false;$/;"	variable	line:557
+doRead	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function doRead($sessionId)$/;"	function	line:570
+sessionExpired	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $this->sessionExpired = false;$/;"	variable	line:572
+selectSql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $selectSql  = $this->getSelectSql();$/;"	variable	line:578
+selectStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $selectStmt = $this->pdo->prepare($selectSql);$/;"	variable	line:579
+sessionRows	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^        $sessionRows = $selectStmt->fetchAll(\\PDO::FETCH_NUM);$/;"	variable	line:583
+sessionExpired	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $this->sessionExpired = true;$/;"	variable	line:587
+insertStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $insertStmt = $this->pdo->prepare($/;"	variable	line:599
+sessionRows	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $sessionRows = $selectStmt->fetchAll(\\PDO::FETCH_NUM);$/;"	variable	line:616
+doAdvisoryLock	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function doAdvisoryLock($sessionId)$/;"	function	line:642
+stmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $stmt = $this->pdo->prepare('SELECT GET_LOCK(:key, 50)');$/;"	variable	line:648
+releaseStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                $releaseStmt = $this->pdo->prepare('DO RELEASE_LOCK(:key)');$/;"	variable	line:652
+sessionInt1	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $sessionInt1 = hexdec(substr($sessionId, 0, 7));$/;"	variable	line:662
+sessionInt2	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $sessionInt2 = hexdec(substr($sessionId, 7, 7));$/;"	variable	line:663
+stmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $stmt = $this->pdo->prepare('SELECT pg_advisory_lock(:key1, :key2)');$/;"	variable	line:665
+releaseStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $releaseStmt = $this->pdo->prepare('SELECT pg_advisory_unlock(:key1, :key2)');$/;"	variable	line:670
+sessionBigInt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $sessionBigInt = hexdec(substr($sessionId, 0, 15));$/;"	variable	line:674
+stmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $stmt = $this->pdo->prepare('SELECT pg_advisory_lock(:key)');$/;"	variable	line:676
+releaseStmt	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^                    $releaseStmt = $this->pdo->prepare('SELECT pg_advisory_unlock(:key)');$/;"	variable	line:680
+getSelectSql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function getSelectSql()$/;"	function	line:698
+getMergeSql	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    private function getMergeSql()$/;"	function	line:726
+getConnection	/var/www/newProject/symfony_demo/src/AppBundle/Handler/UserPdoSessionHandler.php	/^    protected function getConnection()$/;"	function	line:748
+imports	/var/www/newProject/symfony_demo/app/config/config.yml	/^imports:$/;"	function	line:1
+framework	/var/www/newProject/symfony_demo/app/config/config.yml	/^framework:$/;"	function	line:5
+translator	/var/www/newProject/symfony_demo/app/config/config.yml	/^    translator:      { fallbacks: ["%locale%"] }$/;"	function	line:7
+secret	/var/www/newProject/symfony_demo/app/config/config.yml	/^    secret:          "%secret%"$/;"	function	line:8
+router	/var/www/newProject/symfony_demo/app/config/config.yml	/^    router:$/;"	function	line:9
+resource	/var/www/newProject/symfony_demo/app/config/config.yml	/^        resource: "%kernel.root_dir%\/config\/routing.yml"$/;"	function	line:10
+strict_requirements	/var/www/newProject/symfony_demo/app/config/config.yml	/^        strict_requirements: ~$/;"	function	line:11
+form	/var/www/newProject/symfony_demo/app/config/config.yml	/^    form:            ~$/;"	function	line:12
+csrf_protection	/var/www/newProject/symfony_demo/app/config/config.yml	/^    csrf_protection: ~$/;"	function	line:13
+validation	/var/www/newProject/symfony_demo/app/config/config.yml	/^    validation:      { enable_annotations: true }$/;"	function	line:14
+templating	/var/www/newProject/symfony_demo/app/config/config.yml	/^    templating:$/;"	function	line:16
+engines	/var/www/newProject/symfony_demo/app/config/config.yml	/^        engines: ['twig']$/;"	function	line:17
+default_locale	/var/www/newProject/symfony_demo/app/config/config.yml	/^    default_locale:  "%locale%"$/;"	function	line:18
+trusted_hosts	/var/www/newProject/symfony_demo/app/config/config.yml	/^    trusted_hosts:   ~$/;"	function	line:19
+trusted_proxies	/var/www/newProject/symfony_demo/app/config/config.yml	/^    trusted_proxies: ~$/;"	function	line:20
+session	/var/www/newProject/symfony_demo/app/config/config.yml	/^    session:$/;"	function	line:21
+handler_id	/var/www/newProject/symfony_demo/app/config/config.yml	/^        handler_id: session.handler.factory$/;"	function	line:23
+fragments	/var/www/newProject/symfony_demo/app/config/config.yml	/^    fragments:       ~$/;"	function	line:24
+http_method_override	/var/www/newProject/symfony_demo/app/config/config.yml	/^    http_method_override: true$/;"	function	line:25
+twig	/var/www/newProject/symfony_demo/app/config/config.yml	/^twig:$/;"	function	line:28
+debug	/var/www/newProject/symfony_demo/app/config/config.yml	/^    debug:            "%kernel.debug%"$/;"	function	line:29
+strict_variables	/var/www/newProject/symfony_demo/app/config/config.yml	/^    strict_variables: "%kernel.debug%"$/;"	function	line:30
+paths	/var/www/newProject/symfony_demo/app/config/config.yml	/^    paths:$/;"	function	line:31
+assetic	/var/www/newProject/symfony_demo/app/config/config.yml	/^assetic:$/;"	function	line:36
+debug	/var/www/newProject/symfony_demo/app/config/config.yml	/^    debug:          "%kernel.debug%"$/;"	function	line:37
+use_controller	/var/www/newProject/symfony_demo/app/config/config.yml	/^    use_controller: false$/;"	function	line:38
+bundles	/var/www/newProject/symfony_demo/app/config/config.yml	/^    bundles:        [ ]$/;"	function	line:39
+filters	/var/www/newProject/symfony_demo/app/config/config.yml	/^    filters:$/;"	function	line:41
+cssrewrite	/var/www/newProject/symfony_demo/app/config/config.yml	/^        cssrewrite: ~$/;"	function	line:42
+doctrine	/var/www/newProject/symfony_demo/app/config/config.yml	/^doctrine:$/;"	function	line:49
+dbal	/var/www/newProject/symfony_demo/app/config/config.yml	/^    dbal:$/;"	function	line:50
+driver	/var/www/newProject/symfony_demo/app/config/config.yml	/^        driver:   pdo_mysql$/;"	function	line:51
+wrapper_class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        wrapper_class: Topxia\\Service\\Common\\Connection$/;"	function	line:52
+host	/var/www/newProject/symfony_demo/app/config/config.yml	/^        host:     "%database_host%"$/;"	function	line:53
+port	/var/www/newProject/symfony_demo/app/config/config.yml	/^        port:     "%database_port%"$/;"	function	line:54
+dbname	/var/www/newProject/symfony_demo/app/config/config.yml	/^        dbname:   "%database_name%"$/;"	function	line:55
+user	/var/www/newProject/symfony_demo/app/config/config.yml	/^        user:     "%database_user%"$/;"	function	line:56
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^        password: "%database_password%"$/;"	function	line:57
+charset	/var/www/newProject/symfony_demo/app/config/config.yml	/^        charset:  UTF8$/;"	function	line:58
+mapping_types	/var/www/newProject/symfony_demo/app/config/config.yml	/^        mapping_types:$/;"	function	line:65
+enum	/var/www/newProject/symfony_demo/app/config/config.yml	/^            enum:       string$/;"	function	line:66
+orm	/var/www/newProject/symfony_demo/app/config/config.yml	/^    orm:$/;"	function	line:68
+auto_generate_proxy_classes	/var/www/newProject/symfony_demo/app/config/config.yml	/^        auto_generate_proxy_classes: "%kernel.debug%"$/;"	function	line:69
+naming_strategy	/var/www/newProject/symfony_demo/app/config/config.yml	/^        naming_strategy: doctrine.orm.naming_strategy.underscore$/;"	function	line:70
+auto_mapping	/var/www/newProject/symfony_demo/app/config/config.yml	/^        auto_mapping: true$/;"	function	line:71
+swiftmailer	/var/www/newProject/symfony_demo/app/config/config.yml	/^swiftmailer:$/;"	function	line:74
+transport	/var/www/newProject/symfony_demo/app/config/config.yml	/^    transport: "%mailer_transport%"$/;"	function	line:75
+host	/var/www/newProject/symfony_demo/app/config/config.yml	/^    host:      "%mailer_host%"$/;"	function	line:76
+username	/var/www/newProject/symfony_demo/app/config/config.yml	/^    username:  "%mailer_user%"$/;"	function	line:77
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^    password:  "%mailer_password%"$/;"	function	line:78
+spool	/var/www/newProject/symfony_demo/app/config/config.yml	/^    spool:     { type: memory }$/;"	function	line:79
+services	/var/www/newProject/symfony_demo/app/config/config.yml	/^services:$/;"	function	line:81
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: AppBundle\\Twig\\Extension\\WebExtension$/;"	function	line:83
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:84
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:85
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: PDO$/;"	function	line:89
+calls	/var/www/newProject/symfony_demo/app/config/config.yml	/^        calls:$/;"	function	line:90
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:$/;"	function	line:93
+dsn	/var/www/newProject/symfony_demo/app/config/config.yml	/^            dsn:      "mysql:host=%database_host%;port=%database_port%;dbname=%database_name%"$/;"	function	line:94
+user	/var/www/newProject/symfony_demo/app/config/config.yml	/^            user:     %database_user%$/;"	function	line:95
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^            password: %database_password%$/;"	function	line:96
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class:     AppBundle\\Handler\\UserPdoSessionHandler$/;"	function	line:99
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments: ['@session.handler.pdo.connection', '%session.handler.pdo.options%', '@security.context', '@service_container']$/;"	function	line:100
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: SessionHandlerInterface$/;"	function	line:103
+factory_class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        factory_class: Topxia\\Service\\Common\\SessionHandlerFactory$/;"	function	line:104
+factory_method	/var/www/newProject/symfony_demo/app/config/config.yml	/^        factory_method: getSessionHandler$/;"	function	line:105
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:$/;"	function	line:106
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Twig\\Extension\\HtmlExtension$/;"	function	line:110
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:111
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Twig\\Extension\\MenuExtension$/;"	function	line:115
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:116
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:117
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Listener\\KernelRequestListener$/;"	function	line:121
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:122
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:123
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Listener\\AjaxExceptionListener$/;"	function	line:127
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:128
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:129
+parameters	/var/www/newProject/symfony_demo/app/config/config.yml	/^parameters:$/;"	function	line:132
+db_table	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_table:    sessions$/;"	function	line:134
+db_id_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_id_col:   sess_id$/;"	function	line:135
+db_data_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_data_col: sess_data$/;"	function	line:136
+db_time_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_time_col: sess_time$/;"	function	line:137
+db_lifetime_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_lifetime_col: sess_lifetime$/;"	function	line:138
+db_user_id_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_user_id_col: sess_user_id$/;"	function	line:139

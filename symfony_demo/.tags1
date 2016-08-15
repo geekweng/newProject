@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+imports	/var/www/newProject/symfony_demo/app/config/config.yml	/^imports:$/;"	function	line:1
+framework	/var/www/newProject/symfony_demo/app/config/config.yml	/^framework:$/;"	function	line:5
+translator	/var/www/newProject/symfony_demo/app/config/config.yml	/^    translator:      { fallbacks: ["%locale%"] }$/;"	function	line:7
+secret	/var/www/newProject/symfony_demo/app/config/config.yml	/^    secret:          "%secret%"$/;"	function	line:8
+router	/var/www/newProject/symfony_demo/app/config/config.yml	/^    router:$/;"	function	line:9
+resource	/var/www/newProject/symfony_demo/app/config/config.yml	/^        resource: "%kernel.root_dir%\/config\/routing.yml"$/;"	function	line:10
+strict_requirements	/var/www/newProject/symfony_demo/app/config/config.yml	/^        strict_requirements: ~$/;"	function	line:11
+form	/var/www/newProject/symfony_demo/app/config/config.yml	/^    form:            ~$/;"	function	line:12
+csrf_protection	/var/www/newProject/symfony_demo/app/config/config.yml	/^    csrf_protection: ~$/;"	function	line:13
+validation	/var/www/newProject/symfony_demo/app/config/config.yml	/^    validation:      { enable_annotations: true }$/;"	function	line:14
+templating	/var/www/newProject/symfony_demo/app/config/config.yml	/^    templating:$/;"	function	line:16
+engines	/var/www/newProject/symfony_demo/app/config/config.yml	/^        engines: ['twig']$/;"	function	line:17
+default_locale	/var/www/newProject/symfony_demo/app/config/config.yml	/^    default_locale:  "%locale%"$/;"	function	line:18
+trusted_hosts	/var/www/newProject/symfony_demo/app/config/config.yml	/^    trusted_hosts:   ~$/;"	function	line:19
+trusted_proxies	/var/www/newProject/symfony_demo/app/config/config.yml	/^    trusted_proxies: ~$/;"	function	line:20
+session	/var/www/newProject/symfony_demo/app/config/config.yml	/^    session:$/;"	function	line:21
+handler_id	/var/www/newProject/symfony_demo/app/config/config.yml	/^        handler_id: session.handler.factory$/;"	function	line:23
+fragments	/var/www/newProject/symfony_demo/app/config/config.yml	/^    fragments:       ~$/;"	function	line:24
+http_method_override	/var/www/newProject/symfony_demo/app/config/config.yml	/^    http_method_override: true$/;"	function	line:25
+twig	/var/www/newProject/symfony_demo/app/config/config.yml	/^twig:$/;"	function	line:28
+debug	/var/www/newProject/symfony_demo/app/config/config.yml	/^    debug:            "%kernel.debug%"$/;"	function	line:29
+strict_variables	/var/www/newProject/symfony_demo/app/config/config.yml	/^    strict_variables: "%kernel.debug%"$/;"	function	line:30
+paths	/var/www/newProject/symfony_demo/app/config/config.yml	/^    paths:$/;"	function	line:31
+assetic	/var/www/newProject/symfony_demo/app/config/config.yml	/^assetic:$/;"	function	line:36
+debug	/var/www/newProject/symfony_demo/app/config/config.yml	/^    debug:          "%kernel.debug%"$/;"	function	line:37
+use_controller	/var/www/newProject/symfony_demo/app/config/config.yml	/^    use_controller: false$/;"	function	line:38
+bundles	/var/www/newProject/symfony_demo/app/config/config.yml	/^    bundles:        [ ]$/;"	function	line:39
+filters	/var/www/newProject/symfony_demo/app/config/config.yml	/^    filters:$/;"	function	line:41
+cssrewrite	/var/www/newProject/symfony_demo/app/config/config.yml	/^        cssrewrite: ~$/;"	function	line:42
+doctrine	/var/www/newProject/symfony_demo/app/config/config.yml	/^doctrine:$/;"	function	line:49
+dbal	/var/www/newProject/symfony_demo/app/config/config.yml	/^    dbal:$/;"	function	line:50
+driver	/var/www/newProject/symfony_demo/app/config/config.yml	/^        driver:   pdo_mysql$/;"	function	line:51
+wrapper_class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        wrapper_class: Topxia\\Service\\Common\\Connection$/;"	function	line:52
+host	/var/www/newProject/symfony_demo/app/config/config.yml	/^        host:     "%database_host%"$/;"	function	line:53
+port	/var/www/newProject/symfony_demo/app/config/config.yml	/^        port:     "%database_port%"$/;"	function	line:54
+dbname	/var/www/newProject/symfony_demo/app/config/config.yml	/^        dbname:   "%database_name%"$/;"	function	line:55
+user	/var/www/newProject/symfony_demo/app/config/config.yml	/^        user:     "%database_user%"$/;"	function	line:56
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^        password: "%database_password%"$/;"	function	line:57
+charset	/var/www/newProject/symfony_demo/app/config/config.yml	/^        charset:  UTF8$/;"	function	line:58
+mapping_types	/var/www/newProject/symfony_demo/app/config/config.yml	/^        mapping_types:$/;"	function	line:65
+enum	/var/www/newProject/symfony_demo/app/config/config.yml	/^            enum:       string$/;"	function	line:66
+orm	/var/www/newProject/symfony_demo/app/config/config.yml	/^    orm:$/;"	function	line:68
+auto_generate_proxy_classes	/var/www/newProject/symfony_demo/app/config/config.yml	/^        auto_generate_proxy_classes: "%kernel.debug%"$/;"	function	line:69
+naming_strategy	/var/www/newProject/symfony_demo/app/config/config.yml	/^        naming_strategy: doctrine.orm.naming_strategy.underscore$/;"	function	line:70
+auto_mapping	/var/www/newProject/symfony_demo/app/config/config.yml	/^        auto_mapping: true$/;"	function	line:71
+swiftmailer	/var/www/newProject/symfony_demo/app/config/config.yml	/^swiftmailer:$/;"	function	line:74
+transport	/var/www/newProject/symfony_demo/app/config/config.yml	/^    transport: "%mailer_transport%"$/;"	function	line:75
+host	/var/www/newProject/symfony_demo/app/config/config.yml	/^    host:      "%mailer_host%"$/;"	function	line:76
+username	/var/www/newProject/symfony_demo/app/config/config.yml	/^    username:  "%mailer_user%"$/;"	function	line:77
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^    password:  "%mailer_password%"$/;"	function	line:78
+spool	/var/www/newProject/symfony_demo/app/config/config.yml	/^    spool:     { type: memory }$/;"	function	line:79
+services	/var/www/newProject/symfony_demo/app/config/config.yml	/^services:$/;"	function	line:81
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: AppBundle\\Twig\\Extension\\WebExtension$/;"	function	line:83
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:84
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:85
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: PDO$/;"	function	line:89
+calls	/var/www/newProject/symfony_demo/app/config/config.yml	/^        calls:$/;"	function	line:90
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:$/;"	function	line:93
+dsn	/var/www/newProject/symfony_demo/app/config/config.yml	/^            dsn:      "mysql:host=%database_host%;port=%database_port%;dbname=%database_name%"$/;"	function	line:94
+user	/var/www/newProject/symfony_demo/app/config/config.yml	/^            user:     %database_user%$/;"	function	line:95
+password	/var/www/newProject/symfony_demo/app/config/config.yml	/^            password: %database_password%$/;"	function	line:96
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class:     AppBundle\\Handler\\UserPdoSessionHandler$/;"	function	line:99
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments: ['@session.handler.pdo.connection', '%session.handler.pdo.options%', '@security.context', '@service_container']$/;"	function	line:100
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: SessionHandlerInterface$/;"	function	line:103
+factory_class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        factory_class: Topxia\\Service\\Common\\SessionHandlerFactory$/;"	function	line:104
+factory_method	/var/www/newProject/symfony_demo/app/config/config.yml	/^        factory_method: getSessionHandler$/;"	function	line:105
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:$/;"	function	line:106
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Twig\\Extension\\HtmlExtension$/;"	function	line:110
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:111
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Twig\\Extension\\MenuExtension$/;"	function	line:115
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:116
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:117
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Listener\\KernelRequestListener$/;"	function	line:121
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:122
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:123
+class	/var/www/newProject/symfony_demo/app/config/config.yml	/^        class: Topxia\\WebBundle\\Listener\\AjaxExceptionListener$/;"	function	line:127
+arguments	/var/www/newProject/symfony_demo/app/config/config.yml	/^        arguments:    ['@service_container']$/;"	function	line:128
+tags	/var/www/newProject/symfony_demo/app/config/config.yml	/^        tags:$/;"	function	line:129
+parameters	/var/www/newProject/symfony_demo/app/config/config.yml	/^parameters:$/;"	function	line:132
+db_table	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_table:    sessions$/;"	function	line:134
+db_id_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_id_col:   sess_id$/;"	function	line:135
+db_data_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_data_col: sess_data$/;"	function	line:136
+db_time_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_time_col: sess_time$/;"	function	line:137
+db_lifetime_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_lifetime_col: sess_lifetime$/;"	function	line:138
+db_user_id_col	/var/www/newProject/symfony_demo/app/config/config.yml	/^         db_user_id_col: sess_user_id$/;"	function	line:139
