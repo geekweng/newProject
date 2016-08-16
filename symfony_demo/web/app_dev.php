@@ -30,10 +30,19 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
  */
 $loader = require __DIR__.'/../app/autoload.php';
 Debug::enable();
+require_once __DIR__.'/../app/AppKernel.php';
 
 $kernel = new AppKernel('dev', true);
 $kernel->loadClassCache();
+Request::enableHttpMethodParameterOverride();
 $request = Request::createFromGlobals();
-$response = $kernel->handle($request);
+
+$kernel->boot();
+try {
+    $response = $kernel->handle($request);
+} catch (\RuntimeException $e) {
+    echo "Error!  ".$e->getMessage();
+    die();
+}
 $response->send();
 $kernel->terminate($request, $response);

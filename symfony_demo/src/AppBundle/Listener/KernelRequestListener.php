@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\WebBundle\Listener;
+namespace AppBundle\Listener;
 
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
